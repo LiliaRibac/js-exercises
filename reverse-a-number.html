@@ -15,6 +15,16 @@
             return num.split("").reverse().join('')
         }
         console.log(reversNumber(12345))
+
+        let temp = "";
+//OR
+        function reversNumber1(num) {
+            for (let i of num) {
+                temp = i + temp;
+            }
+            return temp
+        }
+        console.log(reversNumber1("12345"))
     </script>
 </body>
 
